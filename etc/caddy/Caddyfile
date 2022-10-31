@@ -1,0 +1,5 @@
+<machine-name>.<tailnet.name> {
+        reverse_proxy :8080
+        encode gzip
+        root * /var/www
+}

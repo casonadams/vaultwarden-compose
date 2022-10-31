@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:alpine
+    restart: always
+    container_name: vaultwarden
+    ports:
+      - 8080:80
+    volumes:
+      - ${PWD}/data:/data
+    environment:
+      - WEBSOCKET_ENABLED=true
+      - SIGNUPS_ALLOWED=true
