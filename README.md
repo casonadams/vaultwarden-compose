@@ -5,14 +5,20 @@ tailscale, caddy, docker-compose, and a raspberry pi
 
 ## setup
 
+### setup caddy
+
+[caddy install](https://caddyserver.com/docs/install)
+
 ### setup tailscale
 
 [tailscale](https://tailscale.com/)
+
 [tailnet-name](https://tailscale.com/kb/1217/tailnet-name/)
 
 - Add a machine
 - Setup DNS
 - Enable MagicDNS
+- Enable HTTPS Certificates
 
 ### docker
 
