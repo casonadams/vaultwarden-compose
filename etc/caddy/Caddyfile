@@ -3,3 +3,9 @@
         encode gzip
         root * /var/www
 }
+# optional, grants access via the tailscale ip address if needed
+<node.ip> {
+        reverse_proxy :8080
+        encode gzip
+        root * /var/www
+}
